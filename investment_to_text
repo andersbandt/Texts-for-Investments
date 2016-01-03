@@ -19,7 +19,7 @@ for i in range(118,123):
 price = float(final)
 
 value = price * 128.514
-totalnet = value1 - 3200
+totalnet = value - 3200
 
 if totalnet < -300:
 	message = "Hmm.. things are looking rough. Your net loss is %s" % totalnet
