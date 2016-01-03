@@ -37,23 +37,19 @@ print message
 
 me = "your email"
 to = ""your phone number"@vtext.com"
-subject = "stocks"
 login = "your gmail address"
 password = "your password"
 smptserver = "smtp.gmail.com:587"
 
 
-def sendemail(from_ , to , subject, message, login,
+def sendemail(sender, to, message, login,
 	password, smptserver):
-	header = "From: %s" % from_
-	header += 'To: %s' % to
-	header += 'Subject: %s' % subject
 
 	server = smtplib.SMTP(smptserver)
 	server.starttls()
 	server.login(login,password)
-	problems = server.sendmail(from_, to, message)
+	problems = server.sendmail(sender, to, message)
 
-sendemail(me, to, subject, message, login, password, smptserver)
+sendemail(me, to, message, login, password, smptserver)
 
 
