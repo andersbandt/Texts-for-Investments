@@ -7,7 +7,7 @@ import smtplib
 from email.mime.text import MIMEText
 
 
-info = getQuotes("Your stock ticker)
+info = getQuotes("Your stock ticker") # For example: "AAPL", "MSFT", etc.
 
 stuff = json.dumps(info)
 
@@ -35,8 +35,8 @@ if totalnet > 300:
 
 print message
 
-me = "your email"
-to = ""your phone number"@vtext.com"
+me = "your email here"
+to = "your phone number"@vtext.com"
 login = "your gmail address"
 password = "your password"
 smptserver = "smtp.gmail.com:587"
